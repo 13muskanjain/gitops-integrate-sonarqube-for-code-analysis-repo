@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Docker Super Mario Project Modified for Learning GitOps Pipeline by Raghu the Security Expert
 
 ## Overview
@@ -9,3 +10,6 @@ The Docker Super Mario Project is a modern adaptation of the classic Infinite Ma
 - **Audio Elements**: Enhances the gaming experience with authentic sound effects and background music.
 - **Docker Integration**: Facilitates the deployment of the application in isolated environments, making it easy to share and scale.
 - **GitOps Workflow**: Introduces participants to modern DevOps practices, focusing on automation, monitoring, and version control.
+=======
+# gitops-integrate-sonarqube-for-code-analysis-repo
+>>>>>>> d33dfbdf91d5463f7c36e33ed6f0cddbdfc0bd91
