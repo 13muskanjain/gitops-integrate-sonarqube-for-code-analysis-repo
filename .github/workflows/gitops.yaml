@@ -1,4 +1,4 @@
-#name keyword provides name to out github action.
+#name keyword provides name to out github action
 name: "Run SAST Scan on SuperMario Game Project"
 #whenever there is a new code push to main branch
 on:
