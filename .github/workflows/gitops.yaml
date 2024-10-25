@@ -1,0 +1,24 @@
+#name keyword provides name to out github action.
+name: "Run SAST Scan on SuperMario Game Project"
+#whenever there is a new code push to main branch
+on:
+  push:
+    branches:
+      - main
+#jobs keyword defines multiple jobs within our devsecops pipeline  
+jobs:
+#1st job
+  sonarqube_sast_scan:
+    runs-on: ubuntu-latest    #ubuntu machine is provided by github free of cost.
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:               #fetch depth 0 mean thourogh analysis previous clones of code will also be checked.
+          fetch-depth: 0  # Shallow clones should be disabled for better analysis relevance
+
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
