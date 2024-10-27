@@ -1,10 +1,10 @@
 #name keyword provides name to out github action
 name: "Run SAST Scan on SuperMario Game Project"
 #whenever there is a new code push to main branch
-on:
-  push:
-    branches:
-      - main
+# on:
+#   push:
+#     branches:
+#       - main
 #jobs keyword defines multiple jobs within our devsecops pipeline  
 jobs:
 #1st job
